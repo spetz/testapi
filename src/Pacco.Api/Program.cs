@@ -22,6 +22,7 @@ namespace MyApi
                 .Configure(app => app.UseEndpoints(endpoints => endpoints
                     .Get("", res => res.WriteAsync("Welcome to My API!"))
                     .Get<GetProducts,IEnumerable<ProductDto>>("products", (query, products, res) => res.Ok(products))
+                    .Get<GetProducts,IEnumerable<ProductDto>>("products/{minPrice}/{maxPrice}", (query, products, res) => res.Ok(products))
                     .Post<AddProduct>("products", (cmd, res) => res.Created($"products/{cmd.Id}"))
                     .Delete<DeleteProduct>("products/{id}", (cmd, res) => res.NoContent())))
                 .Build()

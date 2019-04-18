@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/media/spetz/3CA05031A04FF046/Workspace/Convey/Repo/Sandbox/Pacco.Api/src/Pacco.Api/Pacco.Api.csproj",
+    "projectUniqueName": "/Users/goorion/Repos/Convey/testapi/src/Pacco.Api/Pacco.Api.csproj",
     "projectName": "Pacco.Api",
-    "projectPath": "/media/spetz/3CA05031A04FF046/Workspace/Convey/Repo/Sandbox/Pacco.Api/src/Pacco.Api/Pacco.Api.csproj",
-    "outputPath": "/media/spetz/3CA05031A04FF046/Workspace/Convey/Repo/Sandbox/Pacco.Api/src/Pacco.Api/obj/",
+    "projectPath": "/Users/goorion/Repos/Convey/testapi/src/Pacco.Api/Pacco.Api.csproj",
+    "outputPath": "/Users/goorion/Repos/Convey/testapi/src/Pacco.Api/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"

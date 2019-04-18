@@ -1,14 +1,21 @@
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
+using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using Pacco.Api.Messages;
-using Utf8Json;
 using Utf8Json.AspNetCoreMvcFormatter;
 using Utf8Json.Resolvers;
+using JsonSerializer = Utf8Json.JsonSerializer;
 
 namespace Pacco.Api
 {
@@ -68,6 +75,16 @@ namespace Pacco.Api
         {
             var query = new TQuery();
             var dispatcher = request.HttpContext.RequestServices.GetService<IQueryDispatcher>();
+
+            if (request.HasQueryString())
+            {
+                query = request.GetFromQueryString<TQuery, TResult>();
+            }
+            else if (request.HasRouteData())
+            {
+                query = request.GetFromRouteData<TQuery, TResult>();
+            }
+            
 //            var result = await dispatcher.QueryAsync(query);
             var result = await dispatcher.QueryAsync<TQuery, TResult>(query);
 
@@ -127,5 +144,33 @@ namespace Pacco.Api
         public static void NoContent(this HttpResponse response)
         {
         }
+
+        private static bool HasQueryString(this HttpRequest request)
+            => request.Query.Any();
+
+        private static bool HasRouteData(this HttpRequest request)
+            => request.HttpContext.GetRouteData().Values.Any();
+
+        private static TQuery GetFromQueryString<TQuery, TResult>(this HttpRequest request) 
+            where TQuery : class, IQuery<TResult>, new()
+        {
+            var queryString = HttpUtility.ParseQueryString(request.HttpContext.Request.QueryString.ToString());
+            var queryStringDict = queryString.AllKeys
+                .ToDictionary
+                (
+                    key => key,
+                    key => queryString[key]
+                );
+            var json = JsonSerializer.Serialize(queryStringDict);
+            return JsonSerializer.Deserialize<TQuery>(json);
+        }
+        
+        private static TQuery GetFromRouteData<TQuery, TResult>(this HttpRequest request)  
+            where TQuery : class, IQuery<TResult>, new()
+        {
+            var dictionary = request.HttpContext.GetRouteData().Values;
+            var json = JsonSerializer.Serialize(dictionary);
+            return JsonSerializer.Deserialize<TQuery>(json);
+        }  
     }
 }
