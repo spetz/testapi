@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99fc525b-cf54-4190-bd98-503001d3285d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco.Api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco.Api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/EndpointsBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/EndpointsBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/IEndpointsBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/IEndpointsBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/Messages/GetProductsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/Messages/GetProductsHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/Messages/IQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/Messages/IQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/Messages/IQueryDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/Messages/IQueryDispatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/Messages/QueryDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/Messages/QueryDispatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/bin/Debug/netcoreapp2.2/Pacco.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/bin/Debug/netcoreapp2.2/Pacco.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/bin/Debug/netcoreapp2.2/Pacco.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/bin/Debug/netcoreapp2.2/Pacco.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/obj/Debug/netcoreapp2.2/Pacco.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/obj/Debug/netcoreapp2.2/Pacco.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pacco.Api/obj/Debug/netcoreapp2.2/Pacco.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacco.Api/obj/Debug/netcoreapp2.2/Pacco.Api.pdb" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/Pacco.Api/IEndpointsBuilder.cs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="234">
+                    <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+                    <folding>
+                      <marker date="1555604822941" expanded="false" signature="6:72" ph="..." />
+                      <marker date="1555604822941" expanded="true" signature="93:637" ph="{...}" />
+                      <marker date="1555604822941" expanded="true" signature="134:635" ph="{...}" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/Pacco.Api/EndpointsBuilder.cs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="532">
+                    <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+                    <folding>
+                      <marker date="1555604811001" expanded="false" signature="6:138" ph="..." />
+                      <marker date="1555604811001" expanded="true" signature="159:1615" ph="{...}" />
+                      <marker date="1555604811001" expanded="true" signature="215:1613" ph="{...}" />
+                      <marker date="1555604811001" expanded="true" signature="336:398" ph="{...}" />
+                      <marker date="1555604811001" expanded="true" signature="487:704" ph="{...}" />
+                      <marker date="1555604811001" expanded="true" signature="556:666" ph="{...}" />
+                      <marker date="1555604811001" expanded="true" signature="884:1113" ph="{...}" />
+                      <marker date="1555604811001" expanded="true" signature="1235:1426" ph="{...}" />
+                      <marker date="1555604811001" expanded="true" signature="1562:1607" ph="{...}" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Extensions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="71" column="77" lean-forward="true" selection-start-line="71" selection-start-column="77" selection-end-line="71" selection-end-column="77" />
+              <folding>
+                <marker date="1555605573984" expanded="false" signature="6:337" ph="..." />
+                <marker date="1555605573984" expanded="true" signature="358:4687" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="395:4685" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="763:1265" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="908:1223" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="1359:1766" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="1852:1901" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="1989:2038" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="2608:2941" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="3043:3303" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="3372:3454" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="3563:3619" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="3827:3886" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="3951:4010" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="4075:4134" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="4204:4306" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="4394:4593" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="4492:4583" ph="{...}" />
+                <marker date="1555605573984" expanded="true" signature="4659:4679" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/IQuery.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="40" />
+              <folding>
+                <marker date="1555605247455" expanded="true" signature="59:311" ph="{...}" />
+                <marker date="1555605247455" expanded="true" signature="89:101" ph="{...}" />
+                <marker date="1555605247455" expanded="true" signature="146:158" ph="{...}" />
+                <marker date="1555605247455" expanded="true" signature="248:309" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/QueryDispatcher.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding>
+                <marker date="1555605627342" expanded="false" signature="6:91" ph="..." />
+                <marker date="1555605627342" expanded="true" signature="121:1514" ph="{...}" />
+                <marker date="1555605627342" expanded="true" signature="175:1512" ph="{...}" />
+                <marker date="1555605627342" expanded="true" signature="307:375" ph="{...}" />
+                <marker date="1555605627342" expanded="true" signature="451:701" ph="{...}" />
+                <marker date="1555605627342" expanded="true" signature="524:691" ph="{...}" />
+                <marker date="1555605627342" expanded="true" signature="782:1135" ph="{...}" />
+                <marker date="1555605627342" expanded="true" signature="855:1125" ph="{...}" />
+                <marker date="1555605627342" expanded="true" signature="1246:1506" ph="{...}" />
+                <marker date="1555605627342" expanded="true" signature="1319:1496" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+              <folding>
+                <marker date="1555604356248" expanded="false" signature="6:203" ph="..." />
+                <marker date="1555604356248" expanded="true" signature="262:1130" ph="{...}" />
+                <marker date="1555604356248" expanded="true" signature="296:1128" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/DeleteProduct.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1555604389947" expanded="true" signature="43:213" ph="{...}" />
+                <marker date="1555604389947" expanded="true" signature="87:211" ph="{...}" />
+                <marker date="1555604389947" expanded="true" signature="164:205" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/GetProductsHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="32" column="80" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
+              <folding>
+                <marker date="1555605650408" expanded="true" signature="6:96" ph="..." />
+                <marker date="1555605650408" expanded="true" signature="126:963" ph="{...}" />
+                <marker date="1555605650408" expanded="true" signature="218:961" ph="{...}" />
+                <marker date="1555605650408" expanded="true" signature="315:796" ph="{...}" />
+                <marker date="1555605650408" expanded="true" signature="356:472" ph="{...}" />
+                <marker date="1555605650408" expanded="true" signature="513:629" ph="{...}" />
+                <marker date="1555605650408" expanded="true" signature="670:786" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ICommandDispatcher.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <marker date="1555597470944" expanded="true" signature="59:176" ph="{...}" />
+                <marker date="1555597470944" expanded="true" signature="101:174" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ICommandHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="36" />
+              <folding>
+                <marker date="1555149089532" expanded="true" signature="59:174" ph="{...}" />
+                <marker date="1555149089532" expanded="true" signature="123:172" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/IEndpointsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/IQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BEFAFC39-799C-412D-B202-C2E0B3C3D94E/29/7200075a/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD7BBB1E-B6CB-4178-A82C-D5136B2606B8/c7/7d554bcb/HttpRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/GetProductsHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ProductDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/IQueryDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/QueryDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/CommandDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/GetProducts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/EndpointsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0366DF96-A306-4DFB-8E8E-8F21BCA68142/ab/823abdce/StatusCodeResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/DeleteProduct.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/AddProductHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ICommandDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/AddProduct.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ICommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0366DF96-A306-4DFB-8E8E-8F21BCA68142/8b/3de68e34/NotFoundResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ICommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A42AE733-E333-4634-BAE5-ADE86E3A3A7D/4f/dcb52a57/Action`3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0366DF96-A306-4DFB-8E8E-8F21BCA68142/90/449a2925/AcceptedResult.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/IMessage.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/IMessageHandler.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/ICommand.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/ICommandHandler.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/AddProductHandler.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/appsettings.json" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/ICommandDispatcher.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/ProductDto.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Program.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/AddProduct.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/EndpointsBuilder.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/IEndpointsBuilder.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/IQuery.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Extensions.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/IQueryDispatcher.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/QueryDispatcher.cs" />
+        <option value="$PROJECT_DIR$/src/Pacco.Api/Messages/GetProductsHandler.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="y" value="32" />
+    <option name="width" value="1720" />
+    <option name="height" value="1408" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Api" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Api" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Api" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Pacco.Api" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Api" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Pacco.Api" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Messages" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../DevMentors/Repo/DShop.sln" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Pacco.Api" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Pacco.Api/Pacco.Api.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
+      <option name="LAUNCH_PROFILE_NAME" value="Pacco.Api" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99fc525b-cf54-4190-bd98-503001d3285d" name="Default Changelist" comment="" />
+      <created>1555146865272</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555146865272</updated>
+      <workItem from="1555146866382" duration="5605000" />
+      <workItem from="1555353623719" duration="6247000" />
+      <workItem from="1555530512903" duration="3275000" />
+      <workItem from="1555597300257" duration="7792000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22919000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="32" width="1720" height="1408" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25029796" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39891136" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32944834" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="REST Client" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32970452" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Pacco.Api/Messages/AddProductHandler.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/src/Pacco.Api/Messages/AddProductHandler.cs" initialLine="17">
+            <startOffsets>
+              <option value="516" />
+            </startOffsets>
+            <endOffsets>
+              <option value="542" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Pacco.Api/Extensions.cs</url>
+          <line>73</line>
+          <properties documentPath="$PROJECT_DIR$/src/Pacco.Api/Extensions.cs" initialLine="71">
+            <startOffsets>
+              <option value="2908" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2931" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Pacco.Api/Extensions.cs</url>
+          <line>71</line>
+          <properties documentPath="$PROJECT_DIR$/src/Pacco.Api/Extensions.cs" initialLine="71">
+            <startOffsets>
+              <option value="2829" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2894" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Pacco.Api/Messages/QueryDispatcher.cs</url>
+          <line>30</line>
+          <properties documentPath="$PROJECT_DIR$/src/Pacco.Api/Messages/QueryDispatcher.cs" initialLine="30">
+            <startOffsets>
+              <option value="1083" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1111" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Pacco.Api/Messages/GetProductsHandler.cs</url>
+          <line>31</line>
+          <properties documentPath="$PROJECT_DIR$/src/Pacco.Api/Messages/GetProductsHandler.cs" initialLine="36">
+            <startOffsets>
+              <option value="874" />
+            </startOffsets>
+            <endOffsets>
+              <option value="874" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Startup.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DD7BBB1E-B6CB-4178-A82C-D5136B2606B8/c7/7d554bcb/HttpRequest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1958">
+          <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Properties/launchSettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BEFAFC39-799C-412D-B202-C2E0B3C3D94E/29/7200075a/JsonSerializer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="689" column="33" selection-start-line="689" selection-start-column="33" selection-end-line="689" selection-end-column="33" />
+          <folding>
+            <marker date="1553112908735" expanded="true" signature="0:304" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1553112908735" expanded="false" signature="312:613" ph="..." />
+            <marker date="1553112908735" expanded="true" signature="633:38000" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="725:37998" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="1079:1223" ph="/// FormatterResolver that used resolver less overloads. If does not set it, used StandardResolver.Default. ... " />
+            <marker date="1553112908735" expanded="true" signature="1280:1486" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="1296:1480" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="1572:1665" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="1588:1659" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="1671:1772" ph="///Set default resolver of Utf8Json APIs. ... " />
+            <marker date="1553112908735" expanded="true" signature="1847:1908" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="2024:2115" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="2268:2562" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="2631:2729" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="2850:3024" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="3133:3227" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="3393:3657" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="3784:3890" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="3896:3994" ph="/// Serialize to stream(write async) with specified resolver. ... " />
+            <marker date="1553112908735" expanded="true" signature="4117:4638" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="4258:4562" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="4576:4632" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="4644:4810" ph="/// Serialize to binary. Get the raw memory pool byte[]. The result can not share across thread and can not hold, ... " />
+            <marker date="1553112908735" expanded="true" signature="4873:4970" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="4976:5166" ph="/// Serialize to binary with specified resolver. Get the raw memory pool byte[]. The result can not share across  ... " />
+            <marker date="1553112908735" expanded="true" signature="5277:5565" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="5668:5764" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="5924:6211" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="6260:6354" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="6436:6538" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="6588:6683" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="6766:6842" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="6904:7007" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="7102:7335" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="7394:7494" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="7586:7762" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="7813:7909" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="7993:9009" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="8244:8661" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="9071:9172" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="9286:11039" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="9470:10942" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="9591:10150" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="9782:9979" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="10185:10281" ph="/* ISSUE: explicit reference operation ... */" />
+            <marker date="1553112908735" expanded="true" signature="10430:10526" ph="/* ISSUE: explicit reference operation ... */" />
+            <marker date="1553112908735" expanded="true" signature="10956:11015" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="11090:11152" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="11215:11462" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="11513:11776" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="11836:11907" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="11979:12233" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="12293:12563" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="12662:14759" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="12712:14753" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="12922:13368" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="12963:13088" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="13727:14068" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="13768:13893" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="14831:15143" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="14961:15116" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="15180:15470" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="15283:15464" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="15506:37994" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="16016:16149" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="16273:16482" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="16617:16730" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="16889:17086" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="17256:17357" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="17472:17698" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="17824:17938" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="18110:18324" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="18540:18642" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="18762:18997" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="19128:19254" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="19456:19679" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="19900:20013" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="20144:20323" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="20407:20525" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="20675:20781" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="20789:20959" ph="/// Serialize to binary. Get the raw memory pool byte[]. The result can not share across thread and can not hold, ... " />
+            <marker date="1553112908735" expanded="true" signature="21028:21217" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="21225:21395" ph="/// Serialize to binary. Get the raw memory pool byte[]. The result can not share across thread and can not hold, ... " />
+            <marker date="1553112908735" expanded="true" signature="21475:21594" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="21602:21796" ph="/// Serialize to binary with specified resolver. Get the raw memory pool byte[]. The result can not share across  ... " />
+            <marker date="1553112908735" expanded="true" signature="21915:22114" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="22122:22316" ph="/// Serialize to binary with specified resolver. Get the raw memory pool byte[]. The result can not share across  ... " />
+            <marker date="1553112908735" expanded="true" signature="22454:22560" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="22669:22816" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="22936:23052" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="23218:23375" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="23552:23655" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="23719:23833" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="23930:24032" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="24097:24212" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="24310:24428" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="24505:24628" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="24771:24882" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="24948:25064" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="25163:25267" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="25341:25461" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="25593:25701" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="25778:25899" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="26034:26142" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="26451:37988" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="27453:36800" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="27572:27658" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="27984:28059" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="28346:28461" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="28824:28928" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="29217:29352" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="29715:29839" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="30148:30234" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="30566:30641" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="30951:31037" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="31366:31441" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="31728:31814" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="32096:32182" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="32518:32630" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="32949:33061" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="33402:33488" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="33770:33856" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="34192:34298" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="34580:34686" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="35027:35142" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="35517:35621" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="35930:36016" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="36308:36394" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="36869:36949" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="37011:37083" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="37170:37980" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="37419:37943" ph="{...}" />
+            <marker date="1553112908735" expanded="true" signature="37647:37906" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0366DF96-A306-4DFB-8E8E-8F21BCA68142/90/449a2925/AcceptedResult.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0366DF96-A306-4DFB-8E8E-8F21BCA68142/ab/823abdce/StatusCodeResult.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/appsettings.development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0366DF96-A306-4DFB-8E8E-8F21BCA68142/8b/3de68e34/NotFoundResult.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A42AE733-E333-4634-BAE5-ADE86E3A3A7D/4f/dcb52a57/Action`3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1555599435163" expanded="true" signature="0:315" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1555599435163" expanded="true" signature="333:416" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Pacco.Api.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ICommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <marker date="1555149013930" expanded="true" signature="28:74" ph="{...}" />
+            <marker date="1555149013930" expanded="true" signature="60:72" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ProductDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <marker date="1555597887821" expanded="true" signature="43:208" ph="{...}" />
+            <marker date="1555597887821" expanded="true" signature="73:206" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/AddProductHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <marker date="1555354762832" expanded="false" signature="6:65" ph="..." />
+            <marker date="1555354762832" expanded="true" signature="95:560" ph="{...}" />
+            <marker date="1555354762832" expanded="true" signature="162:558" ph="{...}" />
+            <marker date="1555354762832" expanded="true" signature="298:348" ph="{...}" />
+            <marker date="1555354762832" expanded="true" signature="401:552" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/AddProduct.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <marker date="1555604396678" expanded="true" signature="43:364" ph="{...}" />
+            <marker date="1555604396678" expanded="true" signature="84:362" ph="{...}" />
+            <marker date="1555604396678" expanded="true" signature="251:356" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/CommandDispatcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" selection-start-line="8" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <marker date="1555597470941" expanded="false" signature="6:91" ph="..." />
+            <marker date="1555597470941" expanded="true" signature="121:715" ph="{...}" />
+            <marker date="1555597470941" expanded="true" signature="179:713" ph="{...}" />
+            <marker date="1555597470941" expanded="true" signature="313:381" ph="{...}" />
+            <marker date="1555597470941" expanded="true" signature="457:707" ph="{...}" />
+            <marker date="1555597470941" expanded="true" signature="530:697" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ICommandDispatcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <marker date="1555597470944" expanded="true" signature="59:176" ph="{...}" />
+            <marker date="1555597470944" expanded="true" signature="101:174" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/ICommandHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <marker date="1555149089532" expanded="true" signature="59:174" ph="{...}" />
+            <marker date="1555149089532" expanded="true" signature="123:172" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/IEndpointsBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <marker date="1555604822941" expanded="false" signature="6:72" ph="..." />
+            <marker date="1555604822941" expanded="true" signature="93:637" ph="{...}" />
+            <marker date="1555604822941" expanded="true" signature="134:635" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/EndpointsBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+          <folding>
+            <marker date="1555604811001" expanded="false" signature="6:138" ph="..." />
+            <marker date="1555604811001" expanded="true" signature="159:1615" ph="{...}" />
+            <marker date="1555604811001" expanded="true" signature="215:1613" ph="{...}" />
+            <marker date="1555604811001" expanded="true" signature="336:398" ph="{...}" />
+            <marker date="1555604811001" expanded="true" signature="487:704" ph="{...}" />
+            <marker date="1555604811001" expanded="true" signature="556:666" ph="{...}" />
+            <marker date="1555604811001" expanded="true" signature="884:1113" ph="{...}" />
+            <marker date="1555604811001" expanded="true" signature="1235:1426" ph="{...}" />
+            <marker date="1555604811001" expanded="true" signature="1562:1607" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/GetProducts.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1555604396675" expanded="true" signature="63:234" ph="{...}" />
+            <marker date="1555604396675" expanded="true" signature="128:232" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <marker date="1555604356248" expanded="false" signature="6:203" ph="..." />
+            <marker date="1555604356248" expanded="true" signature="262:1130" ph="{...}" />
+            <marker date="1555604356248" expanded="true" signature="296:1128" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/IQuery.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <marker date="1555605247455" expanded="true" signature="59:311" ph="{...}" />
+            <marker date="1555605247455" expanded="true" signature="89:101" ph="{...}" />
+            <marker date="1555605247455" expanded="true" signature="146:158" ph="{...}" />
+            <marker date="1555605247455" expanded="true" signature="248:309" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/DeleteProduct.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1555604389947" expanded="true" signature="43:213" ph="{...}" />
+            <marker date="1555604389947" expanded="true" signature="87:211" ph="{...}" />
+            <marker date="1555604389947" expanded="true" signature="164:205" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/IQueryDispatcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <marker date="1555605588773" expanded="true" signature="59:275" ph="{...}" />
+            <marker date="1555605588773" expanded="true" signature="99:273" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/QueryDispatcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <marker date="1555605627342" expanded="false" signature="6:91" ph="..." />
+            <marker date="1555605627342" expanded="true" signature="121:1514" ph="{...}" />
+            <marker date="1555605627342" expanded="true" signature="175:1512" ph="{...}" />
+            <marker date="1555605627342" expanded="true" signature="307:375" ph="{...}" />
+            <marker date="1555605627342" expanded="true" signature="451:701" ph="{...}" />
+            <marker date="1555605627342" expanded="true" signature="524:691" ph="{...}" />
+            <marker date="1555605627342" expanded="true" signature="782:1135" ph="{...}" />
+            <marker date="1555605627342" expanded="true" signature="855:1125" ph="{...}" />
+            <marker date="1555605627342" expanded="true" signature="1246:1506" ph="{...}" />
+            <marker date="1555605627342" expanded="true" signature="1319:1496" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Extensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="71" column="77" lean-forward="true" selection-start-line="71" selection-start-column="77" selection-end-line="71" selection-end-column="77" />
+          <folding>
+            <marker date="1555605573984" expanded="false" signature="6:337" ph="..." />
+            <marker date="1555605573984" expanded="true" signature="358:4687" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="395:4685" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="763:1265" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="908:1223" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="1359:1766" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="1852:1901" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="1989:2038" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="2608:2941" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="3043:3303" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="3372:3454" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="3563:3619" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="3827:3886" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="3951:4010" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="4075:4134" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="4204:4306" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="4394:4593" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="4492:4583" ph="{...}" />
+            <marker date="1555605573984" expanded="true" signature="4659:4679" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pacco.Api/Messages/GetProductsHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="32" column="80" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
+          <folding>
+            <marker date="1555605650408" expanded="true" signature="6:96" ph="..." />
+            <marker date="1555605650408" expanded="true" signature="126:963" ph="{...}" />
+            <marker date="1555605650408" expanded="true" signature="218:961" ph="{...}" />
+            <marker date="1555605650408" expanded="true" signature="315:796" ph="{...}" />
+            <marker date="1555605650408" expanded="true" signature="356:472" ph="{...}" />
+            <marker date="1555605650408" expanded="true" signature="513:629" ph="{...}" />
+            <marker date="1555605650408" expanded="true" signature="670:786" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

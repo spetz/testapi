@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_Pacco.Api.726135826.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Pacco.Api.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src" t="Include">
+        <e p="Pacco.Api" t="IncludeRecursive">
+          <e p="EndpointsBuilder.cs" t="Include" />
+          <e p="Extensions.cs" t="Include" />
+          <e p="IEndpointsBuilder.cs" t="Include" />
+          <e p="Messages" t="Include">
+            <e p="AddProduct.cs" t="Include" />
+            <e p="AddProductHandler.cs" t="Include" />
+            <e p="CommandDispatcher.cs" t="Include" />
+            <e p="DeleteProduct.cs" t="Include" />
+            <e p="GetProducts.cs" t="Include" />
+            <e p="GetProductsHandler.cs" t="Include" />
+            <e p="ICommand.cs" t="Include" />
+            <e p="ICommandDispatcher.cs" t="Include" />
+            <e p="ICommandHandler.cs" t="Include" />
+            <e p="IQuery.cs" t="Include" />
+            <e p="IQueryDispatcher.cs" t="Include" />
+            <e p="ProductDto.cs" t="Include" />
+            <e p="QueryDispatcher.cs" t="Include" />
+          </e>
+          <e p="Pacco.Api.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="appsettings.development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.2" t="Include">
+                <e p="Pacco.Api.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+    </e>
+  </component>
+</project>
