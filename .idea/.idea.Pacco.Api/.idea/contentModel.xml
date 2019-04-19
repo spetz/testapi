@@ -8,9 +8,13 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="src" t="Include">
         <e p="Pacco.Api" t="IncludeRecursive">
-          <e p="EndpointsBuilder.cs" t="Include" />
+          <e p="Builders" t="Include">
+            <e p="DispatcherEndpointsBuilder.cs" t="Include" />
+            <e p="EndpointsBuilder.cs" t="Include" />
+            <e p="IDispatcherEndpointsBuilder.cs" t="Include" />
+            <e p="IEndpointsBuilder.cs" t="Include" />
+          </e>
           <e p="Extensions.cs" t="Include" />
-          <e p="IEndpointsBuilder.cs" t="Include" />
           <e p="Messages" t="Include">
             <e p="AddProduct.cs" t="Include" />
             <e p="AddProductHandler.cs" t="Include" />

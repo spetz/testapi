@@ -4,11 +4,8 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Pacco.Api.Messages;
-using Pacco.Api;
 
-// ReSharper disable once CheckNamespace
-
-namespace MyApi
+namespace Pacco.Api
 {
     public static class Program
     {
@@ -19,12 +16,15 @@ namespace MyApi
                     .AddConsul()
                     .AddRabbitMq()
                     .ScanAssemblyTypes())
-                .Configure(app => app.UseEndpoints(endpoints => endpoints
-                    .Get("", res => res.WriteAsync("Welcome to My API!"))
-                    .Get<GetProducts,IEnumerable<ProductDto>>("products", (query, products, res) => res.Ok(products))
-                    .Get<GetProducts,IEnumerable<ProductDto>>("products/{minPrice}/{maxPrice}", (query, products, res) => res.Ok(products))
-                    .Post<AddProduct>("products", (cmd, res) => res.Created($"products/{cmd.Id}"))
-                    .Delete<DeleteProduct>("products/{id}", (cmd, res) => res.NoContent())))
+                .Configure(app => app.UseDispatcherEndpoints(endpoints => endpoints
+                    .Get("", ctx => ctx.Response.WriteAsync("Welcome to My API!"))
+                    .Get<GetProducts, IEnumerable<ProductDto>>("products",
+                        afterDispatch: (query, products, ctx) => ctx.Response.Ok(products))
+                    .Get<GetProducts, IEnumerable<ProductDto>>("products/{minPrice}/{maxPrice}",
+                        afterDispatch: (query, products, ctx) => ctx.Response.Ok(products))
+                    .Post<AddProduct>("products",
+                        afterDispatch: (cmd, ctx) => ctx.Response.Created($"products/{cmd.Id}"))
+                    .Delete<DeleteProduct>("products/{id}", afterDispatch: (cmd, ctx) => ctx.Response.NoContent())))
                 .Build()
                 .RunAsync();
     }

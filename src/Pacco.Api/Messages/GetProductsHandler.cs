@@ -24,6 +24,7 @@ namespace Pacco.Api.Messages
             new ProductDto
             {
                 Id = Guid.NewGuid(),
+                
                 Name = "Product 3",
                 Price = 300
             }

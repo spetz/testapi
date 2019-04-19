@@ -1,43 +1,40 @@
 using System;
 using System.Collections.Generic;
-using System.Dynamic;
+using System.ComponentModel.DataAnnotations;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+using Pacco.Api.Builders;
 using Pacco.Api.Messages;
-using Utf8Json.AspNetCoreMvcFormatter;
-using Utf8Json.Resolvers;
-using JsonSerializer = Utf8Json.JsonSerializer;
 
 namespace Pacco.Api
 {
     public static class Extensions
     {
-        private static readonly RouteData EmptyRouteData = new RouteData();
+        private static readonly JsonSerializer Serializer = new JsonSerializer();
+        private const string EmptyJsonObject = "{}";
 
         public static IApplicationBuilder UseEndpoints(this IApplicationBuilder app, Action<IEndpointsBuilder> builder)
             => app.UseRouter(router => builder(new EndpointsBuilder(router)));
 
+        public static IApplicationBuilder UseDispatcherEndpoints(this IApplicationBuilder app,
+            Action<IDispatcherEndpointsBuilder> builder)
+            => app.UseRouter(router => builder(new DispatcherEndpointsBuilder(new EndpointsBuilder(router))));
+        
         public static IServiceCollection AddWebApi(this IServiceCollection services)
         {
             services.AddRouting()
                 .AddLogging()
                 .AddMvcCore()
-                .AddMvcOptions(option =>
-                {
-                    option.OutputFormatters.Clear();
-                    option.OutputFormatters.Add(new JsonOutputFormatter(StandardResolver.Default));
-                    option.InputFormatters.Clear();
-                    option.InputFormatters.Add(new JsonInputFormatter());
-                });
+                .AddJsonFormatters();
 
             return services;
         }
@@ -46,6 +43,8 @@ namespace Pacco.Api
         {
             services.Scan(scan => scan.FromCallingAssembly().AddClasses().AsMatchingInterface()
                 .AddClasses(classes => classes.AssignableTo(typeof(ICommandHandler<>)))
+                .AsImplementedInterfaces()
+                .WithTransientLifetime()
                 .AddClasses(classes => classes.AssignableTo(typeof(IQueryHandler<,>)))
                 .AsImplementedInterfaces()
                 .WithTransientLifetime());
@@ -63,86 +62,99 @@ namespace Pacco.Api
             return services;
         }
 
-        public static Task WriteJsonAsync<T>(this HttpResponse response, T obj)
-            => JsonSerializer.NonGeneric.SerializeAsync(response.Body, obj);
-
-        public static async Task<T> ReadJsonAsync<T>(this HttpRequest request) where T : class
-            => await JsonSerializer.NonGeneric.DeserializeAsync(typeof(T), request.Body, StandardResolver.CamelCase) as
-                T;
-
-        public static async Task<(TQuery query, TResult result)> QueryAsync<TQuery, TResult>(this HttpRequest request)
-            where TQuery : class, IQuery<TResult>, new()
+        public static void WriteJson<T>(this HttpResponse response, T obj)
         {
-            var query = new TQuery();
-            var dispatcher = request.HttpContext.RequestServices.GetService<IQueryDispatcher>();
-
-            if (request.HasQueryString())
+            response.ContentType = "application/json";
+            using (var writer = new HttpResponseStreamWriter(response.Body, Encoding.UTF8))
             {
-                query = request.GetFromQueryString<TQuery, TResult>();
+                using (var jsonWriter = new JsonTextWriter(writer))
+                {
+                    jsonWriter.CloseOutput = false;
+                    jsonWriter.AutoCompleteOnClose = false;
+                    Serializer.Serialize(jsonWriter, obj);
+                }
             }
-            else if (request.HasRouteData())
-            {
-                query = request.GetFromRouteData<TQuery, TResult>();
-            }
-            
-//            var result = await dispatcher.QueryAsync(query);
-            var result = await dispatcher.QueryAsync<TQuery, TResult>(query);
-
-            return (query, result);
         }
 
-        public static async Task<T> SendAsync<T>(this HttpRequest request) where T : class, ICommand
+        public static T ReadJson<T>(this HttpContext httpContext)
         {
-            var command = await request.ReadJsonAsync<T>();
-            var dispatcher = request.HttpContext.RequestServices.GetService<ICommandDispatcher>();
-            await dispatcher.DispatchAsync(command);
-            return command;
+            using (var streamReader = new StreamReader(httpContext.Request.Body))
+            using (var jsonTextReader = new JsonTextReader(streamReader))
+            {
+                var obj = Serializer.Deserialize<T>(jsonTextReader);
+
+                var results = new List<ValidationResult>();
+                if (Validator.TryValidateObject(obj, new ValidationContext(obj), results))
+                {
+                    return obj;
+                }
+
+                httpContext.Response.StatusCode = 400;
+                httpContext.Response.WriteJson(results);
+
+                return default(T);
+            }
         }
 
-        public static Task ReturnAsync(this Task _, Action @return)
+
+        public static Task Accepted(this HttpResponse response)
         {
-            @return();
+            response.StatusCode = 202;
             return Task.CompletedTask;
         }
 
-        public static async Task ReturnAsync<T>(this Task<T> message, Action<T> @return) where T : ICommand
-        {
-            @return(await message);
-        }
-
-        public static async Task ReturnAsync<TQuery, TResult>(this Task<(TQuery query, TResult result)> queryAndResult,
-            Action<(TQuery query, TResult result)> ret) where TQuery : IQuery<TResult>
-        {
-            ret(await queryAndResult);
-        }
-
-        public static void Accepted(this HttpResponse response)
-        {
-            response.StatusCode = 202;
-        }
-
-        public static void NotFound(this HttpResponse response)
+        public static Task NotFound(this HttpResponse response)
         {
             response.StatusCode = 404;
+            return Task.CompletedTask;
         }
 
-        public static void Ok<T>(this HttpResponse response, T data)
+        public static Task Ok<T>(this HttpResponse response, T data)
         {
             response.StatusCode = 202;
-            response.WriteJsonAsync(data);
+            response.WriteJson(data);
+            return Task.CompletedTask;
         }
 
-        public static void Created(this HttpResponse response, string location = null)
+        public static Task Created(this HttpResponse response, string location = null)
         {
             response.StatusCode = 201;
             if (!string.IsNullOrEmpty(location))
             {
                 response.Headers.TryAdd("Location", location);
             }
+            return Task.CompletedTask;
         }
 
-        public static void NoContent(this HttpResponse response)
+        public static Task NoContent(this HttpResponse response)
         {
+            response.StatusCode = 204;
+            return Task.CompletedTask;
+        }
+
+
+        public static T ReadQuery<T>(this HttpContext context) where T : class
+        {
+            var request = context.Request;
+            RouteValueDictionary values = null;
+            if (HasRouteData(request))
+            {
+                values = request.HttpContext.GetRouteData().Values;
+            }
+
+            if (HasQueryString(request))
+            {
+                var queryString = HttpUtility.ParseQueryString(request.HttpContext.Request.QueryString.Value);
+                values = values ?? new RouteValueDictionary();
+                foreach (var key in queryString.AllKeys)
+                {
+                    values.TryAdd(key, queryString[key]);
+                }
+            }
+
+            return values is null
+                ? JsonConvert.DeserializeObject<T>(EmptyJsonObject)
+                : JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(values));
         }
 
         private static bool HasQueryString(this HttpRequest request)
@@ -150,27 +162,5 @@ namespace Pacco.Api
 
         private static bool HasRouteData(this HttpRequest request)
             => request.HttpContext.GetRouteData().Values.Any();
-
-        private static TQuery GetFromQueryString<TQuery, TResult>(this HttpRequest request) 
-            where TQuery : class, IQuery<TResult>, new()
-        {
-            var queryString = HttpUtility.ParseQueryString(request.HttpContext.Request.QueryString.ToString());
-            var queryStringDict = queryString.AllKeys
-                .ToDictionary
-                (
-                    key => key,
-                    key => queryString[key]
-                );
-            var json = JsonSerializer.Serialize(queryStringDict);
-            return JsonSerializer.Deserialize<TQuery>(json);
-        }
-        
-        private static TQuery GetFromRouteData<TQuery, TResult>(this HttpRequest request)  
-            where TQuery : class, IQuery<TResult>, new()
-        {
-            var dictionary = request.HttpContext.GetRouteData().Values;
-            var json = JsonSerializer.Serialize(dictionary);
-            return JsonSerializer.Deserialize<TQuery>(json);
-        }  
     }
 }
